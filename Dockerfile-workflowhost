@@ -1,0 +1,4 @@
+FROM mcr.microsoft.com/dotnet/runtime:3.1-nanoserver-1809
+WORKDIR /app
+COPY ./publish .
+ENTRYPOINT ["WorkflowHostService.exe"]
